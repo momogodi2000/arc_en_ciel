@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation | Expert Rénovation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4299e1;
+            border-radius: 4px;
+        }
+
+        .gradient-border {
+            position: relative;
+            overflow: hidden;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, #4299e1, #9f7aea, #ed64a6);
+            animation: rotate 5s linear infinite;
+            z-index: -1;
+        }
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../assets/logo/logo_pro.jpeg" alt="Expert Rénovation" class="h-10 mr-4">
+                <h1 class="text-2xl font-bold text-blue-600" data-fr="Expert Rénovation" data-en="Expert Renovation">Expert Rénovation</h1>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="../index.html" class="hover:text-blue-600 transition" data-fr="Accueil" data-en="Home">Accueil</a>
+                <div class="flex items-center space-x-4">
+                    <button id="languageToggle" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">
+                        <i class="fas fa-language text-2xl"></i>
+                    </button>
+                    <button id="themeToggle" class="text-gray-600 dark:text-gray-300 hover:text-blue-600">
+                        <i class="fas fa-moon text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Form Section -->
+    <section class="pt-24 pb-16 container mx-auto px-4">
+        <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl gradient-border">
+            <h2 class="text-4xl font-bold text-center mb-8 text-blue-600 reveal" data-fr="Réservation de Service" data-en="Service Booking">Réservation de Service</h2>
+            
+            <form id="bookingForm" class="space-y-6">
+                <!-- Personal Information -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Nom" data-en="Last Name">Nom</label>
+                        <input type="text" name="lastName" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Prénom" data-en="First Name">Prénom</label>
+                        <input type="text" name="firstName" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700">
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Numéro de Téléphone" data-en="Phone Number">Numéro de Téléphone</label>
+                    <input type="tel" name="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700">
+                </div>
+
+                <!-- Service Selection -->
+                <div>
+                    <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Services Sélectionnés" data-en="Selected Services">Services Sélectionnés</label>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="painting" name="services" value="painting" class="mr-2">
+                            <label for="painting" data-fr="Peinture Professionnelle" data-en="Professional Painting">Peinture Professionnelle</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="tiling" name="services" value="tiling" class="mr-2">
+                            <label for="tiling" data-fr="Installation de Carrelage" data-en="Tiling Installation">Installation de Carrelage</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="wallDecoration" name="services" value="wallDecoration" class="mr-2">
+                            <label for="wallDecoration" data-fr="Décoration Murale" data-en="Wall Decoration">Décoration Murale</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="ceilingDecoration" name="services" value="ceilingDecoration" class="mr-2">
+                            <label for="ceilingDecoration" data-fr="Décoration Plafond Salon" data-en="Living Room Ceiling Decoration">Décoration Plafond Salon</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date and Description -->
+                <div>
+                    <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Date Souhaitée" data-en="Desired Date">Date Souhaitée</label>
+                    <input type="date" name="desiredDate" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700">
+                </div>
+                <div>
+                    <label class="block mb-2 text-gray-700 dark:text-gray-300" data-fr="Description du Projet" data-en="Project Description">Description du Projet</label>
+                    <textarea name="description" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700" placeholder="Détails supplémentaires..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300" data-fr="Réserver" data-en="Book">
+                    Réserver
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Expert Rénovation. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme and Language Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const languageToggle = document.getElementById('languageToggle');
+        const htmlElement = document.documentElement;
+        const translatableElements = document.querySelectorAll('[data-fr][data-en]');
+        const bookingForm = document.getElementById('bookingForm');
+
+        // Theme Toggle
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            themeToggle.querySelector('i').classList.toggle('fa-moon');
+            themeToggle.querySelector('i').classList.toggle('fa-sun');
+            localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Language Toggle
+        languageToggle.addEventListener('click', () => {
+            const currentLang = languageToggle.getAttribute('data-lang') || 'fr';
+            const newLang = currentLang === 'fr' ? 'en' : 'fr';
+            
+            translatableElements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${newLang}`);
+            });
+
+            languageToggle.setAttribute('data-lang', newLang);
+            localStorage.setItem('language', newLang);
+        });
+
+        // Form Submission
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Collect form data
+            const formData = new FormData(this);
+            const services = Array.from(formData.getAll('services')).join(', ');
+            
+            // Construct WhatsApp message
+            const message = `
+Nouvelle Réservation de Service:
+Nom: ${formData.get('lastName')} ${formData.get('firstName')}
+Téléphone: ${formData.get('phone')}
+Services: ${services}
+Date Souhaitée: ${formData.get('desiredDate')}
+Description: ${formData.get('description') || 'Pas de description'}
+            `.trim().replace(/\n/g, '%0A');
+
+            // WhatsApp URL
+            const whatsappURL = `https://wa.me/695922065?text=${message}`;
+            
+            // Redirect to WhatsApp
+            window.location.href = whatsappURL;
+        });
+
+        // Reveal Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach((element) => {
+            gsap.fromTo(element, 
+                { 
+                    opacity: 0, 
+                    y: 50 
+                },
+                {
+                    opacity: 1, 
+                    y: 0,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse'
+                    }
+                }
+            );
+        });
+
+        // Persistent Theme and Language
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                htmlElement.classList.add('dark');
+                themeToggle.querySelector('i').classList.remove('fa-moon');
+                themeToggle.querySelector('i').classList.add('fa-sun');
+            }
+
+            const savedLanguage = localStorage.getItem('language');
+            if (savedLanguage) {
+                languageToggle.setAttribute('data-lang', savedLanguage);
+                translatableElements.forEach(el => {
+                    el.textContent = el.getAttribute(`data-${savedLanguage}`);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
