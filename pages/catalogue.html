@@ -169,137 +169,27 @@
             <button class="filter-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-filter="decoration" data-fr="Décoration" data-en="Decoration">Décoration</button>
             <button class="filter-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-filter="plafond" data-fr="Plafond" data-en="Ceiling">Plafond</button>
         </div>
-    
+
+
         <!-- Project Grid -->
         <div class="grid md:grid-cols-3 gap-8" id="projectGrid">
-    <!-- Peinture Projects -->
-            <div class="project-card rounded-xl shadow-lg" data-category="peinture">
-                <div class="p-6">
-                    <div class="relative">
-                        <!-- Image Slider -->
-                        <div class="slide-container">
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service.jpg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-2.jpg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-3.jpg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-3.jpg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 flex items-center justify-between">
-                            <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
-                            <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Rénovation Maison Moderne" data-en="Modern House Renovation">Rénovation Maison Moderne</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet de peinture complète à Douala, quartier Akwa." data-en="Complete painting project in Douala, Akwa district.">Projet de peinture complète à Douala, quartier Akwa.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                            <span data-fr="Douala, Cameroun" data-en="Douala, Cameroon">Douala, Cameroun</span>
-                        </div>
-                        <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                            <span data-fr="Voir" data-en="View">Voir</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Additional Project Card 1 -->
-            <div class="project-card rounded-xl shadow-lg" data-category="peinture">
-                <div class="p-6">
-                    <div class="relative">
-                        <!-- Image Slider -->
-                        <div class="slide-container">
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-4.jpg" alt="Villa Rénovation" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-5.jpg" alt="Villa Rénovation" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-6.jpg" alt="Villa Rénovation" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/painting-service-6.jpg" alt="Villa Rénovation" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 flex items-center justify-between">
-                            <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
-                            <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Rénovation Villa Complète" data-en="Complete Villa Renovation">Rénovation Villa Complète</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Transformation élégante avec une palette de couleurs neutres." data-en="Elegant transformation with a neutral color palette.">Transformation élégante avec une palette de couleurs neutres.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                            <span data-fr="Garoua, Cameroun" data-en="Garoua, Cameroon">Garoua, Cameroun</span>
-                        </div>
-                        <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                            <span data-fr="Voir" data-en="View">Voir</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Additional Project Card 2 -->
-            <div class="project-card rounded-xl shadow-lg" data-category="peinture">
-                <div class="p-6">
-                    <div class="relative">
-                        <!-- Image Slider -->
-                        <div class="slide-container">
-                            <div class="slide fade">
-                                <img src="../assets/images/pen_pen.jpg" alt="Rénovation Bureau Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/tiling-service.jpg" alt="Rénovation Bureau Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/satff.jpg" alt="Rénovation Bureau Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                            <div class="slide fade">
-                                <img src="../assets/images/Carrelage_ud.jpg" alt="Rénovation Bureau Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 flex items-center justify-between">
-                            <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
-                            <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Bureau Professionnel" data-en="Professional Office">Bureau Professionnel</h3>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Rénovation complète d'un espace de travail." data-en="Complete renovation of a workspace.">Rénovation complète d'un espace de travail.</p>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                            <span data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon">Yaoundé, Cameroun</span>
-                        </div>
-                        <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                            <span data-fr="Voir" data-en="View">Voir</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-    
-           <!-- Carrelage Projects -->
-    <div class="project-card rounded-xl shadow-lg" data-category="carrelage">
+  <!-- Peinture Projects -->
+    <div class="project-card rounded-xl shadow-lg" data-category="peinture">
         <div class="p-6">
             <div class="relative">
                 <!-- Image Slider -->
                 <div class="slide-container">
                     <div class="slide fade">
-                        <img src="../assets/images/tiling-service.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <img src="../assets/photo/2.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
                     </div>
                     <div class="slide fade">
-                        <img src="../assets/images/tiling-service-2.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <img src="../assets/photo/1.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
                     </div>
                     <div class="slide fade">
-                        <img src="../assets/images/tiling-service-3.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <img src="../assets/photo/3.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/2.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
                     </div>
                 </div>
                 <div class="absolute inset-0 flex items-center justify-between">
@@ -307,14 +197,171 @@
                     <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
                 </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Cuisine de Luxe" data-en="Luxury Kitchen">Cuisine de Luxe</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Installation de carrelage haut de gamme avec des carreaux importés d'Italie." data-en="High-end tiling installation with tiles imported from Italy.">Installation de carrelage haut de gamme avec des carreaux importés d'Italie.</p>
+            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Rénovation Maison Moderne" data-en="Modern House Renovation">Rénovation Maison Moderne</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix." data-en="Complete renovation project carried out in 2023 in Douala, Akwa district. Work performed: Complete wall preparation with filler, full sanding, application of bonding primer, and finishing with premium moisture-resistant paint. Total treated area: 450m². Verifiable reference at 123 Liberty Boulevard, opposite Peace Pharmacy.">Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix.</p>
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
                     <span data-fr="Douala, Cameroun" data-en="Douala, Cameroon">Douala, Cameroun</span>
                 </div>
-                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal1')">
+                    <span data-fr="Voir" data-en="View">Voir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card rounded-xl shadow-lg" data-category="peinture">
+        <div class="p-6">
+            <div class="relative">
+                <!-- Image Slider -->
+                <div class="slide-container">
+                    <div class="slide fade">
+                        <img src="../assets/photo/9.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/6.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/7.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/6.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-between">
+                    <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
+                    <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
+                </div>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Rénovation Maison Moderne" data-en="Modern House Renovation">Rénovation Maison Moderne</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix." data-en="Complete renovation project carried out in 2023 in Douala, Akwa district. Work performed: Complete wall preparation with filler, full sanding, application of bonding primer, and finishing with premium moisture-resistant paint. Total treated area: 450m². Verifiable reference at 123 Liberty Boulevard, opposite Peace Pharmacy.">Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix.</p>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                    <span data-fr="Douala, Cameroun" data-en="Douala, Cameroon">Douala, Cameroun</span>
+                </div>
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal1')">
+                    <span data-fr="Voir" data-en="View">Voir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card rounded-xl shadow-lg" data-category="peinture">
+        <div class="p-6">
+            <div class="relative">
+                <!-- Image Slider -->
+                <div class="slide-container">
+                    <div class="slide fade">
+                        <img src="../assets/photo/15.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/16.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/17.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../assets/photo/16.jpeg" alt="Rénovation Maison Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                    </div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-between">
+                    <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
+                    <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
+                </div>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Rénovation Maison Moderne" data-en="Modern House Renovation">Rénovation Maison Moderne</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix." data-en="Complete renovation project carried out in 2023 in Douala, Akwa district. Work performed: Complete wall preparation with filler, full sanding, application of bonding primer, and finishing with premium moisture-resistant paint. Total treated area: 450m². Verifiable reference at 123 Liberty Boulevard, opposite Peace Pharmacy.">Projet de rénovation complète réalisé en 2023 à Douala, quartier Akwa. Travaux effectués: Préparation complète des murs avec enduit de rebouchage, ponçage intégral, application d'une sous-couche d'accrochage, et finition avec peinture premium résistante à l'humidité. Surface totale traitée: 450m². Référence vérifiable au 123 Boulevard de la Liberté, en face de la Pharmacie de la Paix.</p>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                    <span data-fr="Douala, Cameroun" data-en="Douala, Cameroon">Douala, Cameroun</span>
+                </div>
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal1')">
+                    <span data-fr="Voir" data-en="View">Voir</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Similar updates for other project cards... -->
+
+<!-- Modal Template -->
+<div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+        <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal1')">&times;</span>
+        <h2 class="text-2xl font-bold mb-4">Galerie de Photos - Rénovation Maison Moderne</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="relative group">
+                <img src="../assets/photo/39.jpeg" alt="Photo 1" class="w-full rounded-lg">
+                <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/painting-service.jpg', 'renovation-photo-1.jpg')">
+                    <i class="fas fa-download mr-2"></i>Télécharger
+                </button>
+            </div>
+            <!-- Repeat for other images -->
+        </div>
+    </div>
+</div>
+
+<!-- Add JavaScript for modal and download functionality -->
+<script>
+function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+}
+
+function downloadImage(imgUrl, fileName) {
+    const a = document.createElement('a');
+    a.href = imgUrl;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal-content')) {
+        event.target.parentElement.classList.add('hidden');
+    }
+}
+</script>
+
+
+    
+          <!-- Carrelage Projects -->
+<div class="project-card rounded-xl shadow-lg" data-category="carrelage">
+    <div class="p-6">
+        <div class="relative">
+            <!-- Image Slider -->
+            <div class="slide-container">
+                <div class="slide fade">
+                    <img src="../assets/images/tiling-service.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                </div>
+                <div class="slide fade">
+                    <img src="../assets/images/tiling-service-2.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                </div>
+                <div class="slide fade">
+                    <img src="../assets/images/tiling-service-3.jpg" alt="Cuisine de Luxe" class="w-full h-64 object-cover rounded-lg mb-6">
+                </div>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-between">
+                <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
+                <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
+            </div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Cuisine de Luxe" data-en="Luxury Kitchen">Cuisine de Luxe</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet réalisé en Novembre 2023: Installation complète de carrelage haut de gamme importé d'Italie (60x60cm). Surface traitée: 85m². Travaux réalisés: Dépose ancien carrelage, préparation des surfaces, pose à la colle flexible, jointoiement époxy anti-taches. Localisation: Résidence Les Flamboyants, Avenue de Gaulle, en face du Supermarché Score. Contact sur place: M. Thomas (+237 6XX XXX XXX)" data-en="Project completed in November 2023: Complete installation of high-end Italian tiles (60x60cm). Treated area: 85m². Work performed: Removal of old tiles, surface preparation, flexible adhesive installation, stain-resistant epoxy grouting. Location: Les Flamboyants Residence, De Gaulle Avenue, opposite Score Supermarket. On-site contact: Mr. Thomas (+237 6XX XXX XXX)">Projet réalisé en Novembre 2023: Installation complète de carrelage haut de gamme importé d'Italie (60x60cm). Surface traitée: 85m². Travaux réalisés: Dépose ancien carrelage, préparation des surfaces, pose à la colle flexible, jointoiement époxy anti-taches. Localisation: Résidence Les Flamboyants, Avenue de Gaulle, en face du Supermarché Score. Contact sur place: M. Thomas (+237 6XX XXX XXX)</p>
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                    <span data-fr="Douala, Cameroun" data-en="Douala, Cameroon">Douala, Cameroun</span>
+                </div>
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal-kitchen')">
                     <span data-fr="Voir" data-en="View">Voir</span>
                 </button>
             </div>
@@ -342,13 +389,13 @@
                 </div>
             </div>
             <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Salle de Bain Contemporaine" data-en="Contemporary Bathroom">Salle de Bain Contemporaine</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Transformation complète avec des carreaux texturés." data-en="Complete transformation with textured tiles.">Transformation complète avec des carreaux texturés.</p>
+            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Rénovation achevée en Décembre 2023. Carreaux texturés anti-dérapants (30x60cm) pour les murs et mosaïque au sol. Surface: 35m². Travaux effectués: Étanchéité complète, pose murale et sol, installation de plinthes assorties. Équipements sanitaires remplacés. Situé au Complexe Résidentiel Green Valley, Rue 2.583, quartier Bastos. Contact: Mme. Claire (+237 6XX XXX XXX)" data-en="Renovation completed in December 2023. Anti-slip textured tiles (30x60cm) for walls and mosaic flooring. Area: 35m². Work performed: Complete waterproofing, wall and floor installation, matching skirting installation. Sanitary equipment replaced. Located at Green Valley Residential Complex, Street 2.583, Bastos district. Contact: Mrs. Claire (+237 6XX XXX XXX)">Rénovation achevée en Décembre 2023. Carreaux texturés anti-dérapants (30x60cm) pour les murs et mosaïque au sol. Surface: 35m². Travaux effectués: Étanchéité complète, pose murale et sol, installation de plinthes assorties. Équipements sanitaires remplacés. Situé au Complexe Résidentiel Green Valley, Rue 2.583, quartier Bastos. Contact: Mme. Claire (+237 6XX XXX XXX)</p>
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
                     <span data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon">Yaoundé, Cameroun</span>
                 </div>
-                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal-bathroom1')">
                     <span data-fr="Voir" data-en="View">Voir</span>
                 </button>
             </div>
@@ -375,23 +422,22 @@
                     <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
                 </div>
             </div>
-            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Salle de Bain Contemporaine" data-en="Contemporary Bathroom">Salle de Bain Contemporaine</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Transformation complète avec des carreaux texturés." data-en="Complete transformation with textured tiles.">Transformation complète avec des carreaux texturés.</p>
+            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Salle de Bain Spa" data-en="Spa Bathroom">Salle de Bain Spa</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet Spa privé terminé en Octobre 2023. Installation de carreaux effet marbre (80x80cm) et mosaïque décorative. Surface: 45m². Réalisations: Pose sur plancher chauffant, étanchéité renforcée, éclairage LED intégré. Adresse: Hôtel Hilton, Aile Est, 8ème étage. Référence: Suite Présidentielle. Contact: Service Technique (+237 6XX XXX XXX)" data-en="Private Spa project completed in October 2023. Installation of marble-effect tiles (80x80cm) and decorative mosaic. Area: 45m². Work done: Installation over heated flooring, reinforced waterproofing, integrated LED lighting. Address: Hilton Hotel, East Wing, 8th floor. Reference: Presidential Suite. Contact: Technical Service (+237 6XX XXX XXX)">Projet Spa privé terminé en Octobre 2023. Installation de carreaux effet marbre (80x80cm) et mosaïque décorative. Surface: 45m². Réalisations: Pose sur plancher chauffant, étanchéité renforcée, éclairage LED intégré. Adresse: Hôtel Hilton, Aile Est, 8ème étage. Référence: Suite Présidentielle. Contact: Service Technique (+237 6XX XXX XXX)</p>
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
                     <span data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon">Yaoundé, Cameroun</span>
                 </div>
-                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal-bathroom2')">
                     <span data-fr="Voir" data-en="View">Voir</span>
                 </button>
             </div>
         </div>
     </div>
 
-    
-    
-       <!-- Decoration Projects -->
+
+<!-- Decoration Projects -->
        <div class="project-card rounded-xl shadow-lg" data-category="decoration">
         <div class="p-6">
             <div class="relative">
@@ -494,74 +540,156 @@
         </div>
     </div>
 
-    <!-- Plafond Projects -->
-    <div class="project-card rounded-xl shadow-lg" data-category="plafond">
-        <div class="p-6">
-            <div class="relative">
-                <!-- Image Slider -->
-                <div class="slide-container">
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light-4.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                    </div>
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light-5.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                    </div>
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light-6.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-between">
-                    <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
-                    <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
-                </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Plafond Design Moderne" data-en="Modern Design Ceiling">Plafond Design Moderne</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Conception de plafond suspendu avec éclairage intégré." data-en="Suspended ceiling design with integrated lighting.">Conception de plafond suspendu avec éclairage intégré et design géométrique contemporain.</p>
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                    <span data-fr="Dschang, Cameroun" data-en="Dschang, Cameroon">Dschang, Cameroun</span>
-                </div>
-                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                    <span data-fr="Voir" data-en="View">Voir</span>
-                </button>
-            </div>
-        </div>
-    </div>
 
-    <div class="project-card rounded-xl shadow-lg" data-category="plafond">
-        <div class="p-6">
-            <div class="relative">
-                <!-- Image Slider -->
-                <div class="slide-container">
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
+ <!-- Plafond Projects -->
+        <div class="project-card rounded-xl shadow-lg" data-category="plafond">
+            <div class="p-6">
+                <div class="relative">
+                    <!-- Image Slider -->
+                    <div class="slide-container">
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light-4.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light-5.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light-6.jpg" alt="Plafond Design Moderne" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
                     </div>
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light-2.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
-                    </div>
-                    <div class="slide fade">
-                        <img src="../assets/images/ceiling-light-3.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <div class="absolute inset-0 flex items-center justify-between">
+                        <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
+                        <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
                     </div>
                 </div>
-                <div class="absolute inset-0 flex items-center justify-between">
-                    <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
-                    <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
+                <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Plafond Design Moderne" data-en="Modern Design Ceiling">Plafond Design Moderne</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Projet réalisé en Septembre 2023. Conception et installation d'un plafond suspendu géométrique avec système d'éclairage LED intégré. Surface: 120m². Caractéristiques: Design personnalisé avec motifs hexagonaux, isolation phonique premium, éclairage LED multicouleur contrôlable par smartphone. Situé au Centre Commercial Marina, Niveau 3. Contact: M. Pascal (+237 6XX XXX XXX)" data-en="Project completed in September 2023. Design and installation of geometric suspended ceiling with integrated LED lighting system. Area: 120m². Features: Custom design with hexagonal patterns, premium soundproofing, smartphone-controlled multicolor LED lighting. Located at Marina Shopping Center, Level 3. Contact: Mr. Pascal (+237 6XX XXX XXX)">Projet réalisé en Septembre 2023. Conception et installation d'un plafond suspendu géométrique avec système d'éclairage LED intégré. Surface: 120m². Caractéristiques: Design personnalisé avec motifs hexagonaux, isolation phonique premium, éclairage LED multicouleur contrôlable par smartphone. Situé au Centre Commercial Marina, Niveau 3. Contact: M. Pascal (+237 6XX XXX XXX)</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                        <span data-fr="Dschang, Cameroun" data-en="Dschang, Cameroon">Dschang, Cameroun</span>
+                    </div>
+                    <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal-ceiling1')">
+                        <span data-fr="Voir" data-en="View">Voir</span>
+                    </button>
                 </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Plafond Lumineux" data-en="Luminous Ceiling">Plafond Lumineux</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Installation de plafond avec systèmes d'éclairage LED." data-en="Ceiling installation with sophisticated LED lighting systems.">Installation de plafond avec systèmes d'éclairage LED sophistiqués et finitions haut de gamme.</p>
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
-                    <span data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon">Yaoundé, Cameroun</span>
-                </div>
-                <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
-                    <span data-fr="Voir" data-en="View">Voir</span>
-                </button>
             </div>
         </div>
-    </div>       
+
+        <div class="project-card rounded-xl shadow-lg" data-category="plafond">
+            <div class="p-6">
+                <div class="relative">
+                    <!-- Image Slider -->
+                    <div class="slide-container">
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light-2.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../assets/images/ceiling-light-3.jpg" alt="Plafond Lumineux" class="w-full h-64 object-cover rounded-lg mb-6">
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-between">
+                        <a class="prev cursor-pointer text-white text-3xl" onclick="plusSlides(-1, this)">&#10094;</a>
+                        <a class="next cursor-pointer text-white text-3xl" onclick="plusSlides(1, this)">&#10095;</a>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-semibold mb-2 text-blue-600" data-fr="Plafond Lumineux" data-en="Luminous Ceiling">Plafond Lumineux</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4" data-fr="Installation achevée en Novembre 2023. Plafond tendu avec système d'éclairage LED RGBW. Surface: 85m². Réalisations: Intégration domotique complète, zones d'éclairage personnalisables, système audio dissimulé, isolation thermique renforcée. Localisation: Hôtel Le Méridien, Hall Principal. Responsable: Service Maintenance (+237 6XX XXX XXX)" data-en="Installation completed in November 2023. Stretched ceiling with RGBW LED lighting system. Area: 85m². Features: Complete home automation integration, customizable lighting zones, hidden audio system, enhanced thermal insulation. Location: Le Meridien Hotel, Main Hall. Contact: Maintenance Service (+237 6XX XXX XXX)">Installation achevée en Novembre 2023. Plafond tendu avec système d'éclairage LED RGBW. Surface: 85m². Réalisations: Intégration domotique complète, zones d'éclairage personnalisables, système audio dissimulé, isolation thermique renforcée. Localisation: Hôtel Le Méridien, Hall Principal. Responsable: Service Maintenance (+237 6XX XXX XXX)</p>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                        <span data-fr="Yaoundé, Cameroun" data-en="Yaoundé, Cameroon">Yaoundé, Cameroun</span>
+                    </div>
+                    <button class="view-project-btn bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700" onclick="openModal('modal-ceiling2')">
+                        <span data-fr="Voir" data-en="View">Voir</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals for Ceiling Projects -->
+        <div id="modal-ceiling1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+            <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+                <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal-ceiling1')">&times;</span>
+                <h2 class="text-2xl font-bold mb-4">Galerie - Plafond Design Moderne</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light-4.jpg" alt="Vue principale" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light-4.jpg', 'plafond-moderne-1.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light-5.jpg" alt="Détails éclairage" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light-5.jpg', 'plafond-moderne-2.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light-6.jpg" alt="Vue d'ensemble" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light-6.jpg', 'plafond-moderne-3.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">Spécifications Techniques</h3>
+                        <ul class="text-sm text-gray-600">
+                            <li class="mb-1">✓ Surface: 120m²</li>
+                            <li class="mb-1">✓ LED RGB+CCT</li>
+                            <li class="mb-1">✓ Contrôle smartphone</li>
+                            <li class="mb-1">✓ Isolation phonique 45dB</li>
+                            <li class="mb-1">✓ Design géométrique personnalisé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-ceiling2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+            <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+                <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal-ceiling2')">&times;</span>
+                <h2 class="text-2xl font-bold mb-4">Galerie - Plafond Lumineux</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light.jpg" alt="Vue principale" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light.jpg', 'plafond-lumineux-1.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light-2.jpg" alt="Détails système" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light-2.jpg', 'plafond-lumineux-2.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="relative group">
+                        <img src="../assets/images/ceiling-light-3.jpg" alt="Vue d'ensemble" class="w-full rounded-lg">
+                        <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/ceiling-light-3.jpg', 'plafond-lumineux-3.jpg')">
+                            <i class="fas fa-download mr-2"></i>Télécharger
+                        </button>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">Caractéristiques Avancées</h3>
+                        <ul class="text-sm text-gray-600">
+                            <li class="mb-1">✓ Système LED RGBW</li>
+                            <li class="mb-1">✓ Contrôle domotique</li>
+                            <li class="mb-1">✓ Audio intégré</li>
+                            <li class="mb-1">✓ Isolation thermique R-30</li>
+                            <li class="mb-1">✓ Surface: 85m²</li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <p class="text-xs text-gray-500">
+                                Visitable sur rendez-vous à l'Hôtel Le Méridien<br>
+                                Contact: (+237 6XX XXX XXX)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
 
 
     <!-- JavaScript -->
@@ -593,7 +721,7 @@
 </div>
 </section>
 
-
+<!-- videos -->
     <section>
         <!-- Video Gallery Section -->
         <div class="video-gallery py-12">
@@ -603,7 +731,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Video Project 1 -->
                 <div class="video-card rounded-xl shadow-lg">
-                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/1.mp4" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/v10 (2).webm" frameborder="0" allowfullscreen></iframe>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Luxury Kitchen Renovation</h3>
                         <p class="text-gray-600 dark:text-gray-300">In this project, we transformed a dated kitchen into a modern culinary space, featuring high-end finishes and innovative designs.</p>
@@ -612,7 +740,7 @@
         
                 <!-- Video Project 2 -->
                 <div class="video-card rounded-xl shadow-lg">
-                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/2.mp4" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/v10 (4).webm" frameborder="0" allowfullscreen></iframe>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Contemporary Living Room Design</h3>
                         <p class="text-gray-600 dark:text-gray-300">This project showcases our approach to creating a stylish living room that balances comfort and modern aesthetics with unique décor elements.</p>
@@ -621,7 +749,7 @@
         
                 <!-- Video Project 3 -->
                 <div class="video-card rounded-xl shadow-lg">
-                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/3.mp4" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="w-full h-64 rounded-t-xl" src="../assets/videos/v10 (5).webm" frameborder="0" allowfullscreen></iframe>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2">Elegant Bathroom Makeover</h3>
                         <p class="text-gray-600 dark:text-gray-300">Watch as we revitalize a bathroom space, implementing luxurious materials and fixtures for a spa-like experience.</p>
@@ -736,5 +864,136 @@
             });
         });
     </script>
+
+
+
+<!-- Modals -->
+<div id="modal-kitchen" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+        <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal-kitchen')">&times;</span>
+        <h2 class="text-2xl font-bold mb-4">Galerie - Cuisine de Luxe</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="relative group">
+                <img src="../assets/images/tiling-service.jpg" alt="Photo 1" class="w-full rounded-lg">
+                <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/tiling-service.jpg', 'cuisine-luxe-1.jpg')">
+                    <i class="fas fa-download mr-2"></i>Télécharger
+                </button>
+            </div>
+            <!-- Repeat for other kitchen images -->
+        </div>
+    </div>
+</div>
+<!-- Modal for First Bathroom -->
+<div id="modal-bathroom1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+        <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal-bathroom1')">&times;</span>
+        <h2 class="text-2xl font-bold mb-4">Galerie - Salle de Bain Contemporaine</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="relative group">
+                <img src="../assets/images/bathroom-tiling.jpg" alt="Vue principale" class="w-full rounded-lg">
+                <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/bathroom-tiling.jpg', 'salle-de-bain-contemporaine-1.jpg')">
+                    <i class="fas fa-download mr-2"></i>Télécharger
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Second Bathroom (Spa) -->
+<div id="modal-bathroom2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="modal-content bg-white p-6 rounded-lg max-w-4xl mx-auto mt-20 relative">
+        <span class="absolute top-2 right-4 text-2xl cursor-pointer" onclick="closeModal('modal-bathroom2')">&times;</span>
+        <h2 class="text-2xl font-bold mb-4">Galerie - Salle de Bain Spa</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="relative group">
+                <img src="../assets/images/bathroom-tiling-3.jpg" alt="Vue principale spa" class="w-full rounded-lg">
+                <button class="download-btn absolute bottom-2 right-2 bg-blue-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity" onclick="downloadImage('../assets/images/bathroom-tiling-3.jpg', 'salle-de-bain-spa-1.jpg')">
+                    <i class="fas fa-download mr-2"></i>Télécharger
+                </button>
+            </div>
+           
+    </div>
+</div>
+<!-- Similar modals for bathroom1 and bathroom2 -->
+
+<!-- JavaScript for modals and image handling -->
+<script>
+let currentSlide = {};
+
+function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+function downloadImage(imgUrl, fileName) {
+    const a = document.createElement('a');
+    a.href = imgUrl;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+function plusSlides(n, element) {
+    const container = element.closest('.project-card').querySelector('.slide-container');
+    const slides = container.getElementsByClassName('slide');
+    if (!currentSlide[container.id]) {
+        currentSlide[container.id] = 1;
+    }
+    showSlides(currentSlide[container.id] += n, container);
+}
+
+function showSlides(n, container) {
+    const slides = container.getElementsByClassName('slide');
+    if (n > slides.length) {
+        currentSlide[container.id] = 1;
+    }
+    if (n < 1) {
+        currentSlide[container.id] = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[currentSlide[container.id] - 1].style.display = 'block';
+}
+
+// Initialize all slideshows
+document.addEventListener('DOMContentLoaded', function() {
+    const containers = document.querySelectorAll('.slide-container');
+    containers.forEach((container, index) => {
+        container.id = 'slideshow-' + index;
+        currentSlide[container.id] = 1;
+        showSlides(1, container);
+    });
+});
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.classList.contains('fixed')) {
+        event.target.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+};
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modals = document.querySelectorAll('[id^="modal-"]');
+        modals.forEach(modal => {
+            if (!modal.classList.contains('hidden')) {
+                closeModal(modal.id);
+            }
+        });
+    }
+});
+</script>
+
+    
 </body>
 </html>
